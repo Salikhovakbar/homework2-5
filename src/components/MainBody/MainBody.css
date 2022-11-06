@@ -1,8 +1,4 @@
-.hero_part{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    }
+
     
     h1{
         font-style: normal;
@@ -107,7 +103,7 @@
     .main_photo{
         width: 1350px;
         height: 590px;
-        background-image: url(../images/hero_big_photo.png);
+        background-image: url(../../assets/images/hero_big_photo.png);
         background-size: cover;
         display: flex;
     justify-content: center;
@@ -255,6 +251,7 @@
     }
     .commnet_part{
         display: flex;
+        flex-direction: column;
         margin-top: 120px;
     }
     .account{
