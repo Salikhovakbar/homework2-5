@@ -11,29 +11,31 @@ import picture_ from '../../assets/images/picture_.png'
 import hotel1 from '../../assets/images/hotel1.png'
 import hotel2 from '../../assets/images/hotel2.png'
 import man from '../../assets/images/man.png'
-
-
+import { FiSearch } from "react-icons/fi"
+import  { FaBus } from 'react-icons/fa'
+import {AiOutlineUser} from 'react-icons/ai'
 const MainBody = () => {
     return(
 
     <div className="hero_part"> 
+    <div className="container">
     <div className="main_text">
         <h1>Find Your Best Hotel for Deals</h1>
         <p className="hero_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
     <div className="hero_schedule">
         <div className="hero_btns">
-        <button className="hero_btn_one">Jun 10 - 14</button>
-        <button className="hero_btn_two">2 Guests</button>
+        <button className="hero_btn_one"><i><FaBus/></i> Jun 10 - 14</button>
+        <button className="hero_btn_two"><i><AiOutlineUser/></i> 2 Guests</button>
         </div>
         <div className="main_input">
-        <input list='inpt' className="hero_input" type="text" />
+        <input list='inpt' className="hero_input" type="text" /> <button className='btn-search'><FiSearch/></button>
         <datalist id='inpt'>
             <option value="United States"></option>
             <option value="United Kingdom"></option>
             <option value="Canada"></option>
         </datalist>
-
+</div>
     </div>
 </div>
 <div className="hero_photos">
@@ -49,8 +51,23 @@ const MainBody = () => {
 <h2 className="topic_one">Facilities & Service</h2>
 <p className="explaining">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
 </div>
-<div className="">
-
+<div className="box">
+<div className="box-option">
+<p>Private Workspace</p>
+<p className='text-explaination'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+</div>
+<div className="box-option">
+<p>Parking Area</p>
+<p className='text-explaination'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+</div>
+<div className="box-option">
+<p>Free Wifi</p>
+<p className='text-explaination'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+</div>
+<div className="box-option">
+    <p>Breakfast</p>
+    <p className='text-explaination'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+</div>
 </div>
 <div className="box_advert">
     <div className="advert_photo">
@@ -100,7 +117,10 @@ const MainBody = () => {
 </div>
 <div className="commnet_part">
 <div className="main_picture">
-    <img src={picture_} alt="" />
+    <img className='picture' src={picture_} alt="" />
+    <div className="text-container">
+        <h4>Nazmul Nabeel</h4>
+        <p className='text-explaination-user'>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ”</p></div>
 </div>
 
 <h2 className="topic_one">Best Quality Hotels</h2>
@@ -154,7 +174,7 @@ const MainBody = () => {
     <p className="explaining">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
 <div className="email_part">
     <form action="">
-    <input  required className="email" type="email" placeholder="Enter your email"/>  <button class="btn_subcribe">Subscribe</button>
+<input type='email' required className='email-input' placeholder='enter email' />  <button className="btn_subcribe">Subscribe</button>
 </form>    
 </div>
 </div>
